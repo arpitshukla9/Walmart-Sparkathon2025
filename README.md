@@ -62,7 +62,7 @@
 		• 🧾 Carbon-Efficient Route Score per Trip ✅
 	
 	🧠 ML-BASED ROUTE OPTIMIZATION ENGINE
-	⬆
+	⬇
 	Unique Features
 		• 🧠 Smart Route Generator (multi-drop + traffic-aware)
 		• ⛽ Fuel Efficient Path Finder
@@ -92,7 +92,7 @@
 		• 🔁 Sustainability-Aware ML Models (prefers green over fast routes) ✅
 	
 	📬 DELIVERED
-	⬆
+	⬇
 	Final State
 		• ✅ Delivery Status Updated via App/Device
 		• 🔁 Feedback to Inventory & Customer Record
@@ -138,86 +138,105 @@
 
 
 
-# Complete Tech Stack
-🏗️ RetailVerse Complete Tech Stack
 
-1. Frontend (Web & Mobile-First UI)
-• Framework: React 18 (with Vite for fast builds)
-• Styling: Tailwind CSS (utility-first, responsive, dark/light mode)
-• 3D/Map Visualization:
-• Three.js (via @react-three/fiber and @react-three/drei) for 3D digital twin
-• Google Maps or Mapbox GL for live map navigation
-• State Management: Zustand (lightweight, fast global state)
-• Routing: React Router v6
-• Forms & Validation: React Hook Form, custom validation
-• Data Fetching & Caching: React Query
-• Real-Time Communication: socket.io-client (WebSocket)
-• Excel/PDF Integration:
-• xlsx (Excel import/export)
-• jsPDF (PDF export)
-• QR Code: react-qr-reader, qrcode
-• UI/UX Enhancements:
-• Framer Motion (animations)
-• Heroicons, React Icons
-• Lottie-react (for animated eagle/GarudAI)
-• DaisyUI (optional, for styled components)
-• Notifications: react-hot-toast
+Welcome to the **RetailVerse** project! This document outlines the complete technology stack powering our platform, designed for scalability, real-time collaboration, and seamless integration of AI-driven insights.
 
-2. Backend (API & Real-Time Engine)
-• Runtime: Node.js 18+
-• Framework: Express.js
-• WebSocket: socket.io (real-time events, notifications, live updates)
-• Database: MongoDB (NoSQL, scalable, via Mongoose ODM)
-• Cache/Queue: Redis (for fast data, pub/sub, and AI job queue)
-• Authentication: JWT (JSON Web Tokens), role-based access control
-• File Storage:
-• Local (for dev/demo)
-• Cloudinary, S3, or Google Drive (for production, Excel/PDF uploads)
-• Excel/PDF Processing:
-• xlsx (Excel)
-• pdfkit (PDF)
-• API Documentation: Swagger (OpenAPI)
-• Email/SMS: Nodemailer (for notifications, optional)
-• Logging: Winston (with daily rotate), Morgan (HTTP logs)
-• Testing: Jest, Supertest
+---
 
-3. AI Microservices (ML/AI Engine)
-• Runtime: Python 3.8+
-• Framework: FastAPI (high-performance, async, OpenAPI docs)
-• AI/ML Models:
-• 13+ models (ETA prediction, route risk, demand forecast, anomaly detection, restock alerts, route suggestion, delivery window, live route score, route simulation, reroute crisis, supply-demand balance, checkout health, AI report generator)
-• Data Science Libraries:
-• scikit-learn, pandas, numpy, xgboost, lightgbm, tensorflow/keras (as needed per model)
-• Excel/PDF Integration: openpyxl, pandas, fpdf
-• API Docs: FastAPI auto-generated Swagger UI
-• Inter-service Communication: REST (to backend), WebSocket (for real-time AI events)
-• Cache/Queue: Redis (for fast data, pub/sub, async jobs)
-• Cloud Storage: boto3 (S3), cloudinary, Google Drive API (for Excel/PDF sync)
-• Monitoring: Custom health endpoints
+## 1. Frontend (Web & Mobile-First UI)
 
-4. DevOps & Deployment
-• Containerization: Docker (all services containerized)
-• Orchestration: Docker Compose (multi-service, easy up/down)
-• Reverse Proxy: Nginx (serves frontend, API, and AI microservices)
-• Monitoring:
-• Prometheus (metrics)
-• Grafana (dashboards)
-• ELK Stack (Elasticsearch, Logstash, Kibana for logs)
-• CI/CD: GitHub Actions (optional, for automated builds/tests)
-• Backup: MongoDB backup service (cron, Dockerized)
-• Health Checks: Docker healthcheck, custom /health endpoints
+- **Framework:** React 18 (with Vite for lightning-fast builds)
+- **Styling:** Tailwind CSS (utility-first, responsive, dark/light mode)
+- **3D/Map Visualization:**
+    - Three.js (via `@react-three/fiber`, `@react-three/drei`) for 3D digital twin
+    - Google Maps or Mapbox GL for live map navigation
+- **State Management:** Zustand (lightweight, fast global state)
+- **Routing:** React Router v6
+- **Forms & Validation:** React Hook Form, custom validation
+- **Data Fetching & Caching:** React Query
+- **Real-Time Communication:** socket.io-client (WebSocket)
+- **Excel/PDF Integration:**
+    - `xlsx` (Excel import/export)
+    - `jsPDF` (PDF export)
+- **QR Code:** react-qr-reader, qrcode
+- **UI/UX Enhancements:**
+    - Framer Motion (animations)
+    - Heroicons, React Icons
+    - Lottie-react (animated assets)
+    - DaisyUI (optional, styled components)
+- **Notifications:** react-hot-toast
 
-5. Other Integrations
-• Google Maps API (for live navigation, geocoding)
-• Cloudinary/S3/Google Drive (for file storage, Excel/PDF sync)
-• QR Code (for inventory and delivery confirmation)
-• Role-Based Access: Admin, Warehouse Manager, Driver, Logistics View
+---
 
-6. Architecture Overview
-• Microservices: Frontend, Backend, AI Service, Model Training, Monitoring, Logging—all as separate services.
-• Real-Time Engine: WebSocket everywhere (alerts, updates, map, Excel sync).
-• Digital Twin: 3D and map-based, always live.
-• Excel/PDF: Auto-sync, import/export, AI-powered insights.
+## 2. Backend (API & Real-Time Engine)
 
-<img width="819" height="2146" alt="image" src="https://github.com/user-attachments/assets/fb828d2d-abe4-4a76-ade1-9e77d0619380" />
+- **Runtime:** Node.js 18+
+- **Framework:** Express.js
+- **WebSocket:** socket.io (real-time events, notifications, live updates)
+- **Database:** MongoDB (scalable NoSQL, via Mongoose ODM)
+- **Cache/Queue:** Redis (fast data, pub/sub, AI job queue)
+- **Authentication:** JWT (role-based access control)
+- **File Storage:**
+    - Local (development/demo)
+    - Cloudinary, S3, or Google Drive (production, Excel/PDF uploads)
+- **Excel/PDF Processing:**
+    - `xlsx` (Excel)
+    - `pdfkit` (PDF)
+- **API Documentation:** Swagger (OpenAPI)
+- **Email/SMS:** Nodemailer (notifications, optional)
+- **Logging:** Winston (with daily rotate), Morgan (HTTP logs)
+- **Testing:** Jest, Supertest
+
+---
+
+## 3. AI Microservices (ML/AI Engine)
+
+- **Runtime:** Python 3.8+
+- **Framework:** FastAPI (high-performance, async, OpenAPI docs)
+- **AI/ML Models:** 13+ models (ETA prediction, route risk, demand forecast, anomaly detection, restock alerts, route suggestion, delivery window, live route score, route simulation, reroute crisis, supply-demand balance, checkout health, AI report generator)
+- **Data Science Libraries:** scikit-learn, pandas, numpy, xgboost, lightgbm, tensorflow/keras (as needed)
+- **Excel/PDF Integration:** openpyxl, pandas, fpdf
+- **API Docs:** FastAPI auto-generated Swagger UI
+- **Inter-service Communication:** REST (to backend), WebSocket (real-time AI events)
+- **Cache/Queue:** Redis (fast data, pub/sub, async jobs)
+- **Cloud Storage:** boto3 (S3), Cloudinary, Google Drive API (Excel/PDF sync)
+- **Monitoring:** Custom health endpoints
+
+---
+
+## 4. DevOps & Deployment
+
+- **Containerization:** Docker (all services containerized)
+- **Orchestration:** Docker Compose (multi-service, easy up/down)
+- **Reverse Proxy:** Nginx (serves frontend, API, and AI microservices)
+- **Monitoring:**
+    - Prometheus (metrics)
+    - Grafana (dashboards)
+    - ELK Stack (Elasticsearch, Logstash, Kibana for logs)
+- **CI/CD:** GitHub Actions (automated builds/tests)
+- **Backup:** MongoDB backup service (cron, Dockerized)
+- **Health Checks:** Docker healthcheck, custom `/health` endpoints
+
+---
+
+## 5. Integrations
+
+- **Google Maps API:** Live navigation, geocoding
+- **Cloudinary/S3/Google Drive:** File storage, Excel/PDF sync
+- **QR Code:** Inventory and delivery confirmation
+- **Role-Based Access:** Admin, Warehouse Manager, Driver, Logistics View
+
+---
+
+## 6. Architecture Overview
+
+- **Microservices:** Frontend, Backend, AI Service, Model Training, Monitoring, Logging—all as separate services
+- **Real-Time Engine:** WebSocket everywhere (alerts, updates, map, Excel sync)
+- **Digital Twin:** 3D and map-based, always live
+- **Excel/PDF:** Auto-sync, import/export, AI-powered insights
+
+---
+
+For more details, please refer to the respective service documentation or contact the project maintainers.
+
 
