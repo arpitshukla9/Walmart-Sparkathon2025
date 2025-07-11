@@ -130,8 +130,6 @@
 		• 🤖 Agent-Oriented Decision System
 		• 🔄 Memory-Augmented AI (learns from past trips + sales) ✅
 		• 🛠️ Self-Healing System Logs (shows what AI fixed without help) ✅
-<img width="1806" height="7801" alt="image" src="https://github.com/user-attachments/assets/afba3dbf-142d-45b3-83f8-9fe4ee1f08ff" />
-
 
 
 
