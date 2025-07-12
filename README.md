@@ -235,7 +235,8 @@ Welcome to the **RetailVerse** project! This document outlines the complete tech
 
 ---
 # Impacts of RetailVerse
-<img width="469" height="311" alt="We are Team Theetaaverse  We chose retail supply chain efficiency as our problem statement  Before moving to the demo, here’s exactly what we’ve built and its impact We’ve developed a fully autono" src="https://github.com/user-attachments/assets/32cdb187-08c9-4ffc-95d4-6343180fc2b5" />
+<img width="918" height="571" alt="image" src="https://github.com/user-attachments/assets/8b852211-07fb-48f0-bc4c-931bb2fc457a" />
+
 
 
 For more details, please refer to the respective service documentation or contact the project maintainers.
