@@ -1,7 +1,7 @@
 # Walmart-Sparkathon2025
 
 
-	🔮 🚀 RetailVerse: Sparkathon 2025 Winning Flowchart (Enhanced for Maximum Uniqueness)
+	🔮 🚀 RetailVerse
 	All modules interconnected, fully automated, and powered by ML, IoT, GenAI Agents & Sustainability Intelligence
 	
 	🏢 WAREHOUSE
@@ -25,7 +25,7 @@
 		• 📉 AI Warehouse Performance Scorecard (profitability, utilization, delays) ✅
 	
 	📦 INVENTORY SYSTEM
-	⬆
+	⬇
 	Features & USPs
 		• 📦 Inventory per Warehouse (SKU-based)
 		• ⌛ Expiry & Batch Tracking
